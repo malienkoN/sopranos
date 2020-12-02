@@ -3,7 +3,6 @@
     const navToggle = document.querySelector('#nav_toggle');
 
     nav.classList.remove('active');
-    navToggle.classList.remove('hidden');
 
     navToggle.addEventListener('click', event => {
         event.preventDefault();
