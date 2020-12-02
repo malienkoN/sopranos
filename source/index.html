@@ -55,11 +55,6 @@
                     </ul>
                 </nav>
 
-
-                <button class="nav-toggle hidden" id="nav_toggle" type="button" aria-label="Меню">
-                    <span class="nav-toggle__item">Меню</span>
-                </button>
-
                 <ul class="action">
                     <li class="action__item">
                         <a class="action__link  has-subnav" href="tel:0953743374 ">
@@ -83,10 +78,78 @@
                         </button>
                     </li>
                 </ul>
+
+                <button class="nav-toggle hidden" id="nav_toggle" type="button" aria-label="Меню">
+                    <span class="nav-toggle__item">Меню</span>
+                </button>
             </div>
         </div>
     </header>
 
+    <div class="category-menu">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/category-pizza.png" alt="Пицца">
+                    <span>Пицца</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/category-lunch.png" alt="Бизнес-ланчи">
+                    <span>Бизнес-ланчи</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/category-soup.png" alt="Супы">
+                    <span>Супы</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/category-salad.png" alt="Салаты">
+                    <span>Салаты</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-slider">
+        <!-- Slider main container -->
+        <div class="slider swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="slider__inner swiper-wrapper">
+                <!-- Slides -->
+                <div class="slider__slide swiper-slide">
+                    <div class="slider__img-wrap">
+                        <img class="slider__img" src="img/slider-img.jpg" alt="">
+                        <img class="slider__sub-img" src="img/slider-sub-img.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider__slide swiper-slide">
+                    <div class="slider__img-wrap">
+                        <img class="slider__img" src="img/slider-img.jpg" alt="">
+                        <img class="slider__sub-img" src="img/slider-sub-img.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider__slide swiper-slide">
+                    <div class="slider__img-wrap">
+                        <img class="slider__img" src="img/slider-img.jpg" alt="">
+                        <img class="slider__sub-img" src="img/slider-sub-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

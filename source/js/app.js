@@ -11,3 +11,20 @@
         nav.classList.toggle('active');
     })
 }
+
+new Swiper('.slider',{
+    // Стрелки
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+
+    // Пагинация
+    pagination: {
+        el: '.swiper-pagination',
+        // Возможность переключатся на буллеты
+        clickable: true,
+        // Диннамические буллеты
+        dynamicBullets: true,
+    },
+});

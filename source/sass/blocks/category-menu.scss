@@ -1,0 +1,111 @@
+.category-menu {
+  width: 7.3rem;
+  height: 33rem;
+  background-color: $black;
+
+  box-shadow: 0 0 5px $yellow;
+  border-radius: 0 1rem 1rem 0;
+  transition: all 0.3s ease 0s;
+
+  position: fixed;
+  top: 264px;
+  left: 0;
+  z-index: 3;
+
+  &:hover {
+    width: 28.8rem;
+  }
+
+  ul {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+    height: 100%;
+  }
+
+  li {
+    border-bottom: 1px solid #707070;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover > a {
+      color: $yellow;
+    }
+  }
+
+  a {
+    padding: 14px 14px 14px 0;
+    color: $white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 28.8rem;
+
+    transition: color .2s linear;
+  }
+
+  img {
+    margin-right: 2.5rem;
+  }
+
+  span {
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 1660px) {
+  .category-menu {
+    span {
+      font-size: 2.7rem;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .category-menu {
+    span {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@media (max-width: 1370px) {
+  .category-menu {
+    span {
+      font-size: 2.1rem;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .category-menu {
+    margin-bottom: 4rem;
+    position: static;
+    height: auto;
+    width: 100%!important;
+
+    ul {
+      padding: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      overflow-x: auto;
+    }
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      white-space: normal;
+      border-bottom: none;
+    }
+
+    a {
+      padding: 15px 20px;
+      width: auto;
+    }
+  }
+}

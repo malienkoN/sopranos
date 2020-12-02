@@ -11,6 +11,13 @@
   position: absolute;
   top: 130%;
   left: 0;
+  z-index: 2;
+
+  li {
+    &:hover > a {
+      color: $yellow;
+    }
+  }
 }
 
 .subnav__link {
@@ -23,16 +30,28 @@
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+
+  transition: color .2s linear;
 }
 
-@media (max-width: 1540px) {
+@media (max-width: 1660px) {
   .subnav__link {
     font-size: 2.7rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .subnav__link {
     font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 1370px) {
+  .subnav__link {
+    font-size: 2.1rem;
+  }
+
+  .subnav {
+    width: 20rem;
   }
 }

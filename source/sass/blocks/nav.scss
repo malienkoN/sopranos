@@ -1,7 +1,7 @@
 .nav {
   &.active {
     display: block;
-    order: 2;
+    order: 1;
   }
 }
 
@@ -23,13 +23,13 @@
 
   &:hover {
 
-    //.nav__link {
-    //  background-color: $blue;
-    //}
-
     > .subnav {
       opacity: 1;
       visibility: visible;
+    }
+
+    > a {
+      color: $yellow;
     }
   }
 }
@@ -42,6 +42,8 @@
   text-transform: uppercase;
   color: $white;
   text-decoration: none;
+
+  transition: color .2s linear;
 
   &.has-subnav {
     position: relative;
@@ -67,19 +69,23 @@
   }
 }
 
-@media (max-width: 1540px) {
+@media (max-width: 1660px) {
   .nav__link {
     font-size: 2.8rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .nav__link {
     font-size: 2.5rem;
   }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1370px) {
+  .nav__link {
+    font-size: 2.3rem;
+  }
+
   .nav__item {
     margin-left: 5.5rem;
 

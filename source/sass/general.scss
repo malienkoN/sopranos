@@ -20,9 +20,9 @@ body {
 }
 
 .container {
-  max-width: 177rem;
+  max-width: 192rem;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 9rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,4 +37,28 @@ ul, ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (max-width: 1750px) {
+  .container {
+    padding: 0 4.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 1540px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
+  }
 }

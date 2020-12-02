@@ -1,3 +1,9 @@
+@import '../../node_modules/swiper/swiper';
+@import '../../node_modules/swiper/components/navigation/navigation';
+@import '../../node_modules/swiper/components/pagination/pagination';
+@import '../../node_modules/swiper/components/scrollbar/scrollbar';
+
+
 @import 'colors';
 @import 'fonts';
 @import 'general';
@@ -8,3 +14,5 @@
 @import 'blocks/nav-toggle';
 @import 'blocks/subnav';
 @import 'blocks/action';
+@import 'blocks/category-menu';
+@import 'blocks/main-slider';
