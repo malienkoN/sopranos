@@ -15,12 +15,78 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#">
-                    <img src="img/logo.png" alt="The Sopranos">
-                    <p>Доставка пиццы и бизнес ланчей</p>
+                <a class="header__logo-link" href="#">
+                    <img class="header__logo" src="img/logo.png" alt="The Sopranos">
+                    <p class="header__subtext">Доставка пиццы и бизнес ланчей</p>
                 </a>
+
+                <nav class="nav active" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Банкеты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link  has-subnav" href="#">Доставка</a>
+                            <!-- выпадающее меню -->
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#">Пицца</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Бизнес-ланчи</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Супы</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="#">Салаты</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Меню</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Акции <span>%</span></a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <button class="nav-toggle hidden" id="nav_toggle" type="button" aria-label="Меню">
+                    <span class="nav-toggle__item">Меню</span>
+                </button>
+
+                <ul class="action">
+                    <li class="action__item">
+                        <a class="action__link  has-subnav" href="tel:0953743374 ">
+                            <svg class="action__icon" width="21" height="21" viewBox="0 0 21 21">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            <span>095 374 33 74</span>
+                        </a>
+
+                        <ul class="subnav">
+                            <li><a class="subnav__link" href="tel:0973743374">097 374 33 74</a></li>
+                            <li><a class="subnav__link" href="tel:0633743374">063 374 33 74</a></li>
+                        </ul>
+                    </li>
+                    <li class="action__item">
+                        <button class="action__link" type="button">
+                            <svg class="action__icon" width="20.751" height="22.667" viewBox="0 0 20.751 22.667">
+                                <use xlink:href="img/sprite.svg#icon-cart"></use>
+                            </svg>
+                            <span>Корзина</span>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
