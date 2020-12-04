@@ -9,6 +9,7 @@
 @import 'general';
 
 
+@import 'blocks/container';
 @import 'blocks/header';
 @import 'blocks/nav';
 @import 'blocks/nav-toggle';
@@ -16,3 +17,7 @@
 @import 'blocks/action';
 @import 'blocks/category-menu';
 @import 'blocks/main-slider';
+@import 'blocks/products';
+@import 'blocks/product';
+@import 'blocks/btn';
+@import 'blocks/title';
