@@ -1,0 +1,16 @@
+.place__inner {
+  margin-bottom: 11rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.place__title {
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 1600px) {
+  .place__inner {
+    display: block;
+  }
+}

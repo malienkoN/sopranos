@@ -12,7 +12,24 @@
     })
 }
 
-new Swiper('.slider',{
+new Swiper('.main-slider', {
+    // Стрелки
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+
+    // Пагинация
+    pagination: {
+        el: '.swiper-pagination',
+        // Возможность переключатся на буллеты
+        clickable: true,
+        // Диннамические буллеты
+        dynamicBullets: true,
+    },
+});
+
+new Swiper('.place-slider', {
     // Стрелки
     navigation: {
         nextEl: '.swiper-button-next',
