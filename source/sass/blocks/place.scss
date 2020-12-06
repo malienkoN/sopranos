@@ -14,3 +14,13 @@
     display: block;
   }
 }
+
+@media (max-width: 530px) {
+  .place__title {
+    margin-bottom: 7rem;
+
+    span {
+      display: none;
+    }
+  }
+}

@@ -45,3 +45,15 @@ new Swiper('.place-slider', {
         dynamicBullets: true,
     },
 });
+
+new Swiper('.reviews-slider', {
+    direction: 'vertical',
+    loop: true,
+
+    // Пагинация
+    pagination: {
+        el: '.swiper-pagination',
+        // Возможность переключатся на буллеты
+        clickable: true,
+    },
+});

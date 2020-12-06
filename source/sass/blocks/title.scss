@@ -37,41 +37,50 @@
   -webkit-text-stroke-color: $gray;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1600px) {
+  .title-under {
+    font-size: 20rem;
+  }
+}
 
+@media (max-width: 1140px) {
   .title {
     font-size: 3.3rem;
   }
 
   .title-under {
-    font-size: 17rem;
+    font-size: 16rem;
   }
 }
 
-@media (max-width: 600px) {
-
+@media (max-width: 860px) {
   .title-under {
     font-size: 14rem;
   }
 }
 
-@media (max-width: 480px) {
-
+@media (max-width: 740px) {
   .title {
-    font-size: 3.1rem;
+    font-size: 3rem;
   }
 
   .title-under {
-    font-size: 11rem;
+    font-size: 12rem;
   }
 }
 
-@media (max-width: 402px) {
+@media (max-width: 640px) {
 
   .title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
+  .title-under {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 401px) {
   .title-under {
     font-size: 9rem;
   }
