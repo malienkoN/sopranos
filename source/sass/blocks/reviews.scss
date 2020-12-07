@@ -121,9 +121,14 @@
 }
 
 @media (max-width: 1400px) {
+  .reviews {
+    padding-top: 9rem;
+    padding-bottom: 12rem;
+  }
+
   .reviews__inner {
     grid-template-columns: 1fr;
-    grid-gap: 10rem;
+    grid-gap: 13rem;
   }
 
   .reviews__col {
@@ -175,6 +180,15 @@
   }
 }
 
+@media (max-width: 615px) {
+  .reviews__text {
+
+    div {
+      padding: 1rem 1rem 0 0;
+    }
+  }
+}
+
 @media (max-width: 580px) {
   .reviews-slider {
     height: 340px;
@@ -219,6 +233,15 @@
   .reviews-title-under {
     left: 50%;
     font-size: 8rem;
+  }
+}
+
+@media (max-width: 365px) {
+  .reviews__text {
+
+    div {
+      padding: 1.8rem 1rem 0 0;
+    }
   }
 }
 

@@ -5,6 +5,12 @@
   height: 100%;
   margin: 0 auto;
   background-color: $gray;
+
+  transition: transform .2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
 }
 
 .product__header {
