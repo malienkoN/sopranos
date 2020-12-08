@@ -12,17 +12,23 @@
   left: 0;
   z-index: 2000;
 
+  overflow-y: auto;
+  overflow-x: hidden;
+
   &.show {
-    display: flex;
+    display: block;
   }
 }
 
 .modal__inner {
+  margin: 3rem auto;
   width: 760px;
   padding: 1rem 1.8rem 4.5rem 1.2rem;
   position: relative;
 
   background-color: $white;
+
+  transform: none;
 }
 
 .modal__header {
@@ -39,6 +45,7 @@
 }
 
 .modal__close {
+  display: block;
   width: 30px;
   height: 30px;
   padding: 0;
@@ -173,4 +180,89 @@
   padding: 15px 55px 10px;
   font-size: 3.2rem;
   font-weight: 700;
+}
+
+@media (max-width: 1023px) {
+  .modal__close {
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .modal__title {
+    font-size: 3.5rem;
+  }
+
+  .modal__full-price {
+    font-size: 2.8rem;
+  }
+
+  .modal__checkout {
+    padding: 10px 45px 10px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .modal__inner {
+    width: auto;
+    padding: 3rem;
+  }
+
+  .modal__inner {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 665px) {
+  .modal__item {
+    display: block;
+  }
+
+  .modal__item-col {
+    margin-bottom: 1rem;
+  }
+
+  .modal__header {
+    margin-bottom: 5rem;
+  }
+
+  .modal__full-price {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal__title {
+    font-size: 3rem;
+  }
+
+  .modal__full-price {
+    font-size: 2.5rem;
+  }
+
+  .modal__checkout {
+    padding: 10px 40px 10px;
+    font-size: 2.2rem;
+  }
+
+  .modal__close {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 401px) {
+  .modal__inner {
+    padding: 2rem;
+  }
+
+  .modal__item {
+
+    img {
+      margin-right: 2rem;
+    }
+  }
 }
