@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/HelveticaNeue.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/HelveticaNeue-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/HelveticaNeue-CondensedBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>The Sopranos</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="header__logo-link" href="#">
+                <img class="header__logo" src="img/logo.png" alt="Sopranos">
+                <p class="header__subtext">Доставка пиццы и бизнес ланчей</p>
+            </a>
+
+            <nav class="nav active" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Банкеты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link  has-subnav" href="#">Доставка</a>
+                        <!-- выпадающее меню -->
+                        <ul class="subnav">
+                            <li>
+                                <a class="subnav__link" href="#">Пицца</a>
+                            </li>
+                            <li>
+                                <a class="subnav__link" href="#">Бизнес-ланчи</a>
+                            </li>
+                            <li>
+                                <a class="subnav__link" href="#">Супы</a>
+                            </li>
+                            <li>
+                                <a class="subnav__link" href="#">Салаты</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Меню</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Контакты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Акции <span>%</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="action">
+                <li class="action__item">
+                    <a class="action__link  has-subnav" href="tel:0953743374 ">
+                        <svg class="action__icon" width="21" height="21" viewBox="0 0 21 21">
+                            <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <span>095 374 33 74</span>
+                    </a>
+
+                    <ul class="subnav">
+                        <li><a class="subnav__link" href="tel:0973743374">097 374 33 74</a></li>
+                        <li><a class="subnav__link" href="tel:0633743374">063 374 33 74</a></li>
+                    </ul>
+                </li>
+                <li class="action__item">
+                    <button class="action__link" id="cart" type="button">
+                        <svg class="action__icon" width="20.751" height="22.667" viewBox="0 0 20.751 22.667">
+                            <use xlink:href="img/sprite.svg#icon-cart"></use>
+                        </svg>
+                        <span>Корзина</span>
+                    </button>
+                </li>
+            </ul>
+
+            <button class="nav-toggle hidden" id="nav_toggle" type="button" aria-label="Меню">
+                <span class="nav-toggle__item">Меню</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="category-menu">
+    <ul>
+        <li>
+            <a href="#">
+                <img src="img/category-pizza.png" alt="Пицца">
+                <span>Пицца</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/category-lunch.png" alt="Бизнес-ланчи">
+                <span>Бизнес-ланчи</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/category-soup.png" alt="Супы">
+                <span>Супы</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/category-salad.png" alt="Салаты">
+                <span>Салаты</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<section class="products">
+    <div class="container--mod">
+
+        <h2 class="title delivery-title">
+            доставка пиццы
+            <span class="title-under">доставка</span>
+        </h2>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--delivery">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item" aria-current="page">Доставка пиццы</li>
+            </ol>
+        </nav>
+
+        <div class="products__inner">
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/pizza-mexicano.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Пицца Мексикано</div>
+                        <div class="product__weight">630 г</div>
+                    </div>
+
+                    <div class="product__text">
+                        томатный соус, моцарелла, бекон, салями,
+                        шампиньоны, корнишоны, оливки, петрушка.
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>105</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/business-lunch.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Бизнес ланч #2</div>
+                    </div>
+
+                    <div class="product__text">
+                        Первое блюдо: Куриный бульон-куриный бульон, курица, лапша, яйцо,                               петрушка (280г); Второе
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>149</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/pizza-mexicano.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Пицца Мексикано</div>
+                        <div class="product__weight">630 г</div>
+                    </div>
+
+                    <div class="product__text">
+                        томатный соус, моцарелла, бекон, салями,
+                        шампиньоны, корнишоны, оливки, петрушка.
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>105</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/business-lunch.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Бизнес ланч #2</div>
+                    </div>
+
+                    <div class="product__text">
+                        Первое блюдо: Куриный бульон-куриный бульон, курица, лапша, яйцо,                               петрушка (280г); Второе
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>149</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/pizza-mexicano.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+
+                    <div class="product__leaf">
+                        <img class="product__leaf-img" src="img/products/leaf.png"                                    alt="акция 1+1">
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Пицца Мексикано</div>
+                        <div class="product__weight">630 г</div>
+                    </div>
+
+                    <div class="product__text">
+                        томатный соус, моцарелла, бекон, салями,
+                        шампиньоны, корнишоны, оливки, петрушка.
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>105</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/business-lunch.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+
+                    <div class="product__leaf">
+                        <img class="product__leaf-img" src="img/products/leaf.png"                                    alt="акция 1+1">
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Бизнес ланч #2</div>
+                    </div>
+
+                    <div class="product__text">
+                        Первое блюдо: Куриный бульон-куриный бульон, курица, лапша, яйцо,                               петрушка (280г); Второе
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>149</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/pizza-mexicano.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Пицца Мексикано</div>
+                        <div class="product__weight">630 г</div>
+                    </div>
+
+                    <div class="product__text">
+                        томатный соус, моцарелла, бекон, салями,
+                        шампиньоны, корнишоны, оливки, петрушка.
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>105</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/business-lunch.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Бизнес ланч #2</div>
+                    </div>
+
+                    <div class="product__text">
+                        Первое блюдо: Куриный бульон-куриный бульон, курица, лапша, яйцо,                               петрушка (280г); Второе
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>149</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn  product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/pizza-mexicano.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Пицца Мексикано</div>
+                        <div class="product__weight">630 г</div>
+                    </div>
+
+                    <div class="product__text">
+                        томатный соус, моцарелла, бекон, салями,
+                        шампиньоны, корнишоны, оливки, петрушка.
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>105</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/business-lunch.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+
+                    <div class="product__leaf">
+                        <img class="product__leaf-img" src="img/products/leaf.png"                                    alt="акция 1+1">
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Бизнес ланч #2</div>
+                    </div>
+
+                    <div class="product__text">
+                        Первое блюдо: Куриный бульон-куриный бульон, курица, лапша, яйцо,                               петрушка (280г); Второе
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>149</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/pizza-mexicano.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Пицца Мексикано</div>
+                        <div class="product__weight">630 г</div>
+                    </div>
+
+                    <div class="product__text">
+                        томатный соус, моцарелла, бекон, салями,
+                        шампиньоны, корнишоны, оливки, петрушка.
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>105</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/business-lunch.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Бизнес ланч #2</div>
+                    </div>
+
+                    <div class="product__text">
+                        Первое блюдо: Куриный бульон-куриный бульон, курица, лапша, яйцо,                               петрушка (280г); Второе
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>149</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn  product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/pizza-mexicano.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Пицца Мексикано</div>
+                        <div class="product__weight">630 г</div>
+                    </div>
+
+                    <div class="product__text">
+                        томатный соус, моцарелла, бекон, салями,
+                        шампиньоны, корнишоны, оливки, петрушка.
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>105</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/business-lunch.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Бизнес ланч #2</div>
+                    </div>
+
+                    <div class="product__text">
+                        Первое блюдо: Куриный бульон-куриный бульон, курица, лапша, яйцо,                               петрушка (280г); Второе
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>149</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/pizza-mexicano.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Пицца Мексикано</div>
+                        <div class="product__weight">630 г</div>
+                    </div>
+
+                    <div class="product__text">
+                        томатный соус, моцарелла, бекон, салями,
+                        шампиньоны, корнишоны, оливки, петрушка.
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>105</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product__item">
+                <div class="product__header">
+                    <a class="product__img-link" href="#">
+                        <img class="product__img" src="img/products/business-lunch.jpg"                                 alt="Пицца Мексикано">
+                    </a>
+
+                    <div class="product__offer-wrap">
+                        <div class="product__offer-circle">
+                            <img class="product__offer-img" src="img/products/offer.png"                                    alt="акция 1+1">
+                            <span class="product__offer-title">акция<br> 1+1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product__content">
+                    <div class="product__title-wrap">
+                        <div class="product__title">Бизнес ланч #2</div>
+                    </div>
+
+                    <div class="product__text">
+                        Первое блюдо: Куриный бульон-куриный бульон, курица, лапша, яйцо,                               петрушка (280г); Второе
+                    </div>
+
+                    <div class="product__footer">
+                        <div class="product__price"><span>149</span> грн</div>
+                        <div class="product__dots-wrap">
+                            <div class="product__dots"></div>
+                        </div>
+                        <button class="btn  product__btn" type="button">купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="delivery__btn btn btn--border" type="button">
+            <svg width="25.302" height="31.627" viewBox="0 0 25.302 31.627">
+                <use xlink:href="img/sprite.svg#icon-load"></use>
+            </svg>
+            <span>Загрузить еще</span>
+        </button>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__col">
+                <img src="img/logo.png" alt="Sopranos">
+
+                <ul>
+                    <li>
+                        <a class="footer__link-phone" href="tel:380953743374">
+                            <svg class="footer__phone-icon" width="21" height="21" viewBox="0 0 21 21">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 095 374 33 74
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__link-phone" href="tel:380973743374">
+                            <svg class="footer__phone-icon" width="21" height="21" viewBox="0 0 21 21">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 097 374 33 74
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__link-phone" href="tel:+380633743374">
+                            <svg class="footer__phone-icon" width="21" height="21" viewBox="0 0 21 21">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 063 374 33 74
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer__social">
+                    <a href="#" target="_blank">
+                        <svg width="26.327" height="26.327" viewBox="0 0 26.327 26.327">
+                            <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg width="26.327" height="26.327" viewBox="0 0 26.327 26.327">
+                            <use xlink:href="img/sprite.svg#icon-inst"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h3 class="footer__title">
+                    разделы
+                </h3>
+
+                <ul>
+                    <li><a href="#">Банкеты раздел</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Меню</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h3 class="footer__title">
+                    информация
+                </h3>
+
+                <ul>
+                    <li><a href="#">Условия Доставки</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Договор публичной оферты</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">О ресторане</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h3 class="footer__title footer__title--last">
+                    полезные статьи
+                </h3>
+
+                <div>
+                    <a href="#">
+                        <img src="img/footer-article-img.jpg" alt="">
+                        Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit.
+                    </a>
+                    <a href="#">
+                        <img src="img/footer-article-img.jpg" alt="">
+                        Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">
+    <div class="container">
+        <div class="copyright__text">
+            <p>2021&nbsp;&copy; Sopranos</p>
+            <p>Разработка <span>web.art</span></p>
+        </div>
+    </div>
+</div>
+
+<!--  Modal  -->
+<div class="modal" id="modal">
+    <div class="modal__inner">
+        <div class="modal__header">
+            <h4 class="modal__title">
+                Корзина
+            </h4>
+
+            <button class="modal__close" id="modal-close">
+                <svg viewBox="0 0 30 30" width="30" height="30">
+                    <use xlink:href="./img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="modal__item">
+            <div class="modal__item-col">
+                <img src="img/modal-img.jpg" alt="Пицца Мексикано">
+                <a class="modal__item-title" href="#">Пицца Мексикано</a>
+            </div>
+
+            <div class="modal__item-col">
+                <input class="modal__item-count" type="text" value="1">
+                <div class="modal__item-price">1150 грн.</div>
+                <button class="modal__item-remove" type="button"></button>
+            </div>
+        </div>
+
+        <div class="modal__item">
+            <div class="modal__item-col">
+                <img src="img/modal-img.jpg" alt="Пицца Мексикано">
+                <a class="modal__item-title" href="#">Пицца Мексикано</a>
+            </div>
+
+            <div class="modal__item-col">
+                <input class="modal__item-count" type="text" value="1">
+                <div class="modal__item-price">1150 грн.</div>
+                <button class="modal__item-remove" type="button"></button>
+            </div>
+        </div>
+
+        <div class="modal__full-price">Всего на сумму: 250 <span>грн</span></div>
+
+        <button class="modal__checkout btn" type="button">Оформить заказ</button>
+    </div><!-- /.modal__inner  -->
+</div><!-- /.modal  -->
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
