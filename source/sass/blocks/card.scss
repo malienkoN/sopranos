@@ -1,0 +1,171 @@
+.card {
+  margin-top: 12rem;
+}
+
+.card__item {
+  margin-bottom: 12rem;
+  display: flex;
+  position: relative;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 504px;
+    height: 1px;
+    background-color: $gray;
+
+    position: absolute;
+    bottom: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  img {
+    margin-right: 2.6rem;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.card__title {
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.card__price {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+
+  span {
+    font-size: 3.2rem;
+    color: $yellow;
+  }
+}
+
+.card__action {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.card__counter {
+  margin-right: 2.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.card__counter-input {
+  padding: 0;
+  margin: 0 .5rem;
+  width: 38px;
+  height: 37px;
+  text-align: center;
+  border: none;
+  color: #919191;
+}
+
+.card__counter-plus,
+.card__counter-minus {
+  width: 23px;
+  height: 37px;
+  background: $yellow;
+  position: relative;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    background-color: $black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 2px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.card__counter-plus {
+
+  &:after {
+    width: 2px;
+    height: 8px;
+  }
+}
+
+.card__btn-buy {
+  padding: 7.5px 39px;
+}
+
+.card__text {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.card__text-title {
+  margin-bottom: .5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.card-title {
+  margin-bottom: 8rem;
+}
+
+@media (max-width: 1370px) {
+  .card {
+    padding-left: 9rem;
+  }
+}
+
+@media (max-width: 1230px) {
+  .card__item {
+    display: block;
+
+    img {
+      margin: 0 0 2.6rem 0;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .card {
+    display: flex;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .card__item {
+
+    &:after {
+      width: 100%;
+    }
+  }
+
+  .card__title {
+    font-size: 3rem;
+  }
+
+  .card {
+    margin-top: 9rem;
+  }
+}
+
+@media (max-width: 501px) {
+  .card__title {
+    font-size: 2.8rem;
+  }
+}

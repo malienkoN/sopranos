@@ -1,5 +1,9 @@
 .products {
   margin: 0 auto 9rem;
+
+  &--card {
+    margin-bottom: 13.5rem;
+  }
 }
 
 .products__inner {

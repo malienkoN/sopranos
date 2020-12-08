@@ -10,6 +10,11 @@
   &--delivery {
     margin-bottom: 6.5rem;
   }
+
+  &--card {
+    margin-bottom: 3.3rem;
+    justify-content: flex-start;
+  }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -36,5 +41,11 @@
   a {
     color: $yellow;
     text-decoration: none;
+  }
+}
+
+@media (max-width: 326px) {
+  .breadcrumb-item {
+    margin-bottom: 1rem;
   }
 }
