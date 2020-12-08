@@ -57,3 +57,36 @@ new Swiper('.reviews-slider', {
         clickable: true,
     },
 });
+
+{
+    const cart = document.querySelector("#cart");
+    const modal= document.querySelector("#modal");
+    const close = modal.querySelector("#modal-close");
+    const body = document.querySelector("body");
+
+    cart.addEventListener("click", event => {
+        event.preventDefault();
+
+        modal.classList.add("show");
+        body.classList.add("no-scroll");
+    });
+
+    close.addEventListener("click", event => {
+        event.preventDefault();
+
+        modal.classList.remove("show");
+        body.classList.remove("no-scroll");
+    });
+
+    window.addEventListener("keydown", event => {
+        event.preventDefault();
+
+        if (event.keyCode === 27) {
+            if(modal.classList.contains("show")) {
+                event.preventDefault();
+
+                modal.classList.remove("show");
+            }
+        }
+    });
+}
