@@ -15,6 +15,10 @@
     margin-bottom: 3.3rem;
     justify-content: flex-start;
   }
+
+  &--menu {
+    margin-bottom: 10rem;
+  }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
