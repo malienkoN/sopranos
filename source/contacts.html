@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="fonts/HelveticaNeue.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/HelveticaNeue-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/HelveticaNeue-CondensedBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/BebasNeue-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>The Sopranos</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="header__logo-link" href="#">
+                <img class="header__logo" src="img/logo.png" alt="Sopranos">
+                <p class="header__subtext">Доставка пиццы и бизнес ланчей</p>
+            </a>
+
+            <nav class="nav active" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Банкеты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link  has-subnav" href="#">Доставка</a>
+                        <!-- выпадающее меню -->
+                        <ul class="subnav">
+                            <li>
+                                <a class="subnav__link" href="#">Пицца</a>
+                            </li>
+                            <li>
+                                <a class="subnav__link" href="#">Бизнес-ланчи</a>
+                            </li>
+                            <li>
+                                <a class="subnav__link" href="#">Супы</a>
+                            </li>
+                            <li>
+                                <a class="subnav__link" href="#">Салаты</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Меню</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Контакты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Акции <span>%</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <ul class="action">
+                <li class="action__item">
+                    <a class="action__link  has-subnav" href="tel:0953743374 ">
+                        <svg class="action__icon" width="21" height="21" viewBox="0 0 21 21">
+                            <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <span>095 374 33 74</span>
+                    </a>
+
+                    <ul class="subnav">
+                        <li><a class="subnav__link" href="tel:0973743374">097 374 33 74</a></li>
+                        <li><a class="subnav__link" href="tel:0633743374">063 374 33 74</a></li>
+                    </ul>
+                </li>
+                <li class="action__item">
+                    <button class="action__link" id="cart" type="button">
+                        <svg class="action__icon" width="20.751" height="22.667" viewBox="0 0 20.751 22.667">
+                            <use xlink:href="img/sprite.svg#icon-cart"></use>
+                        </svg>
+                        <span>Корзина</span>
+                    </button>
+                </li>
+            </ul>
+
+            <button class="nav-toggle hidden" id="nav_toggle" type="button" aria-label="Меню">
+                <span class="nav-toggle__item">Меню</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="category-menu">
+    <ul>
+        <li>
+            <a href="#">
+                <img src="img/category-pizza.png" alt="Пицца">
+                <span>Пицца</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/category-lunch.png" alt="Бизнес-ланчи">
+                <span>Бизнес-ланчи</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/category-soup.png" alt="Супы">
+                <span>Супы</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/category-salad.png" alt="Салаты">
+                <span>Салаты</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<section class="contacts">
+    <div class="container">
+
+        <h2 class="title contacts-title">
+            Контакты
+            <span class="title-under">Контакты</span>
+        </h2>
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb--contacts">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item" aria-current="page">Контакты</li>
+            </ol>
+        </nav>
+
+        <div class="contacts__cards">
+            <div class="contacts__card">
+                <img src="img/contacts-pin.png" alt="">
+
+                <address>
+                    Украина, Днепр,
+                    Мандрыковская,  246
+                </address>
+            </div>
+
+            <div class="contacts__card">
+                <img src="img/contacts-phone.png" alt="">
+
+                <a href="tel:380953743374">+38 095 374 33 74</a>
+                <a href="tel:380973743374">+38 097 374 33 74</a>
+                <a href="tel:380633743374">+38 063 374 33 74</a>
+            </div>
+
+            <div class="contacts__card">
+                <img src="img/contacts-planet.png" alt="">
+
+                <a href="mailto:info@thesaprano.dp.ua">info@thesaprano.dp.ua</a>
+                <a href="index.html">www.thesaprano.dp.ua</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container--inner">
+    <form class="form" action="/" method="get">
+        <h3 class="form__title">Обратная связь</h3>
+
+        <div class="form__inner">
+            <input class="form__input" type="text" name="name" placeholder="Имя">
+            <input class="form__input" type="email" name="email" placeholder="E-mail">
+            <input class="form__input" type="tel" name="tel" placeholder="Телефон">
+            <textarea class="form__textarea" name="text" placeholder="Сообщение"></textarea>
+        </div>
+
+        <button class="btn btn--border form__btn" type="submit">Отправить</button>
+    </form>
+</div>
+
+<a class="contacts__link-map" href="https://goo.gl/maps/iQRTmT5FGCX1GWoK8" target="_blank">
+    <img src="img/contacts-map.png" alt="">
+    <span>Смотреть на карте</span>
+</a>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__col">
+                <img src="img/logo.png" alt="Sopranos">
+
+                <ul>
+                    <li>
+                        <a class="footer__link-phone" href="tel:380953743374">
+                            <svg class="footer__phone-icon" width="21" height="21" viewBox="0 0 21 21">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 095 374 33 74
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__link-phone" href="tel:380973743374">
+                            <svg class="footer__phone-icon" width="21" height="21" viewBox="0 0 21 21">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 097 374 33 74
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__link-phone" href="tel:+380633743374">
+                            <svg class="footer__phone-icon" width="21" height="21" viewBox="0 0 21 21">
+                                <use xlink:href="img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 063 374 33 74
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer__social">
+                    <a href="#" target="_blank">
+                        <svg width="26.327" height="26.327" viewBox="0 0 26.327 26.327">
+                            <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg width="26.327" height="26.327" viewBox="0 0 26.327 26.327">
+                            <use xlink:href="img/sprite.svg#icon-inst"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h3 class="footer__title">
+                    разделы
+                </h3>
+
+                <ul>
+                    <li><a href="#">Банкеты раздел</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Меню</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h3 class="footer__title">
+                    информация
+                </h3>
+
+                <ul>
+                    <li><a href="#">Условия Доставки</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Договор публичной оферты</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">О ресторане</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h3 class="footer__title footer__title--last">
+                    полезные статьи
+                </h3>
+
+                <div>
+                    <a href="#">
+                        <img src="img/footer-article-img.jpg" alt="">
+                        Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit.
+                    </a>
+                    <a href="#">
+                        <img src="img/footer-article-img.jpg" alt="">
+                        Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">
+    <div class="container">
+        <div class="copyright__text">
+            <p>2021&nbsp;&copy; Sopranos</p>
+            <p>Разработка <span>web.art</span></p>
+        </div>
+    </div>
+</div>
+
+<!--  Modal  -->
+<div class="modal" id="modal">
+    <div class="modal__inner">
+        <div class="modal__header">
+            <h4 class="modal__title">
+                Корзина
+            </h4>
+
+            <button class="modal__close" id="modal-close">
+                <svg viewBox="0 0 30 30" width="30" height="30">
+                    <use xlink:href="./img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="modal__item">
+            <div class="modal__item-col">
+                <img src="img/modal-img.jpg" alt="Пицца Мексикано">
+                <a class="modal__item-title" href="#">Пицца Мексикано</a>
+            </div>
+
+            <div class="modal__item-col">
+                <input class="modal__item-count" type="text" value="1">
+                <div class="modal__item-price">1150 грн.</div>
+                <button class="modal__item-remove" type="button"></button>
+            </div>
+        </div>
+
+        <div class="modal__item">
+            <div class="modal__item-col">
+                <img src="img/modal-img.jpg" alt="Пицца Мексикано">
+                <a class="modal__item-title" href="#">Пицца Мексикано</a>
+            </div>
+
+            <div class="modal__item-col">
+                <input class="modal__item-count" type="text" value="1">
+                <div class="modal__item-price">1150 грн.</div>
+                <button class="modal__item-remove" type="button"></button>
+            </div>
+        </div>
+
+        <div class="modal__full-price">Всего на сумму: 250 <span>грн</span></div>
+
+        <button class="modal__checkout btn" type="button">Оформить заказ</button>
+    </div><!-- /.modal__inner  -->
+</div><!-- /.modal  -->
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
