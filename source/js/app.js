@@ -77,16 +77,4 @@ new Swiper('.reviews-slider', {
         modal.classList.remove("show");
         body.classList.remove("no-scroll");
     });
-
-    window.addEventListener("keydown", event => {
-        event.preventDefault();
-
-        if (event.keyCode === 27) {
-            if(modal.classList.contains("show")) {
-                event.preventDefault();
-
-                modal.classList.remove("show");
-            }
-        }
-    });
 }
