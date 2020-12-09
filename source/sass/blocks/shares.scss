@@ -1,0 +1,43 @@
+.shares {
+  margin-bottom: 13rem;
+}
+
+.shares-title {
+  margin-top: 13.2rem;
+}
+
+@media (max-width: 1300px) {
+  .shares-title {
+
+    span {
+      font-size: 15rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .shares-title {
+
+    span {
+      font-size: 12rem;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .shares-title {
+
+    span {
+      font-size: 10rem;
+    }
+  }
+}
+
+@media (max-width: 605px) {
+  .shares-title {
+
+    span {
+      display: none;
+    }
+  }
+}
