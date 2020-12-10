@@ -24,11 +24,9 @@
   color: $white;
   font-weight: 700;
 
-  img {
+  svg {
     margin: 0 auto 42px;
     display: block;
-    max-width: 100%;
-    height: auto;
   }
 
   address {
@@ -74,11 +72,9 @@
     }
   }
 
-  img {
+  svg {
     margin-right: 15px;
     display: block;
-    max-width: 100%;
-    height: auto;
   }
 }
 
@@ -113,6 +109,11 @@
 
   .contacts__card {
     font-size: 2.5rem;
+
+    svg {
+      width: 50px;
+      height: 50px;
+    }
   }
 }
 
@@ -176,9 +177,9 @@
   .contacts__card {
     width: 100%;
 
-    img {
-      width: 50px;
-      height: 50px;
+    svg {
+      width: 40px;
+      height: 40px;
     }
   }
 

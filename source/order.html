@@ -116,76 +116,138 @@
     </ul>
 </div>
 
-<section class="contacts">
-    <div class="container">
+<section class="order">
+    <div class="container--inner">
 
-        <h2 class="title contacts-title">
-            Контакты
-            <span class="title-under">Контакты</span>
+        <h2 class="title order-title">
+            Оформление заказа
+            <span class="title-under">Корзина</span>
         </h2>
 
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb breadcrumb--contacts">
+            <ol class="breadcrumb breadcrumb--order">
                 <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                <li class="breadcrumb-item" aria-current="page">Контакты</li>
+                <li class="breadcrumb-item" aria-current="page">Корзина</li>
             </ol>
         </nav>
 
-        <div class="contacts__cards">
-            <div class="contacts__card">
-                <svg width="35.522" height="50.209" viewBox="0 0 35.522 50.209">
-                    <use xlink:href="img/sprite.svg#icon-contacts-pin"></use>
-                </svg>
+        <form class="order__form" action="/">
+            <div class="order__item">
+                <div class="order__item-col">
+                    <img src="img/modal-img.jpg" alt="Пицца Мексикано">
+                    <a class="order__product" href="#">Пицца Мексикано</a>
+                </div>
 
-                <address>
-                    Украина, Днепр,
-                    Мандрыковская,  246
-                </address>
+                <div class="order__item-col">
+                    <input class="order__count" type="text" value="1">
+                    <div class="order__price">1150 грн.</div>
+                    <button class="order__remove" type="button"></button>
+                </div>
             </div>
 
-            <div class="contacts__card">
-                <svg width="54" height="54" viewBox="0 0 54 54">
-                    <use xlink:href="img/sprite.svg#icon-contacts-phone"></use>
-                </svg>
+            <div class="order__squares">
+                <div class="order__square">
+                    <h3 class="order__square-title">1. Данные получателя</h3>
 
-                <a href="tel:380953743374">+38 095 374 33 74</a>
-                <a href="tel:380973743374">+38 097 374 33 74</a>
-                <a href="tel:380633743374">+38 063 374 33 74</a>
+                    <div class="order__square-wrap">
+                        <label class="order__label">
+                            <span><span class="order__start">*</span> Email</span>
+                            <input class="order__input" type="email" placeholder="Email" name="email">
+                        </label>
+
+                        <label class="order__label">
+                            <span><span class="order__start">*</span> Получатель имя</span>
+                            <input class="order__input" type="email" placeholder="Имя" name="name">
+                        </label>
+
+                        <label class="order__label">
+                            <span>Телефон</span>
+                            <input class="order__input" type="email" placeholder="Номер телефона" name="tel">
+                        </label>
+
+                        <label class="order__label">
+                            <span>Комментарий</span>
+                            <textarea class="order__textarea" name="text" placeholder="Комментарий"></textarea>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="order__square">
+                    <h3 class="order__square-title">2. Способы оплаты</h3>
+
+
+                    <div class="order__radio-wrap">
+                        <span class="order__choose">Выберете оплату</span>
+
+                        <div class="order__radio-group">
+                            <div class="order__radio">
+                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-1">Оплата наличными</label>
+                            </div>
+
+                            <div class="order__radio">
+                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <label for="radio-2">Оплата картой на сайте</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order__square">
+                    <h3 class="order__square-title">3. Доставка</h3>
+
+                    <div class="order__radio-wrap">
+                        <span class="order__choose">Выберите доставку</span>
+
+                        <div class="order__radio-group">
+                            <div class="order__radio">
+                                <input id="radio-3" type="radio" name="radio" value="3">
+                                <label for="radio-3">Заберу сам</label>
+                            </div>
+
+                            <div class="order__radio">
+                                <input id="radio-4" type="radio" name="radio" value="4" checked>
+                                <label for="radio-4">Курьером</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order__square">
+                    <h3 class="order__square-title">4. Адрес доставки</h3>
+
+                    <div class="order__square-wrap order__square-wrap--last">
+                        <label class="order__label">
+                            <span><span class="order__start">*</span> Улица</span>
+                            <input class="order__input" type="text" name="street">
+                        </label>
+
+                        <label class="order__label">
+                            <span><span class="order__start">*</span> Номер дома</span>
+                            <input class="order__input" type="text" name="house">
+                        </label>
+
+                        <label class="order__label">
+                            <span><span class="order__start">*</span> Квартира/офис</span>
+                            <input class="order__input" type="text" name="apartment">
+                        </label>
+                    </div>
+                </div>
             </div>
 
-            <div class="contacts__card">
-                <svg width="56" height="56" viewBox="0 0 56 56">
-                    <use xlink:href="img/sprite.svg#icon-contacts-planet"></use>
-                </svg>
+            <div class="order__item-last">
+                <p class="order__full-price">Всього до сплати: <span>1150 грн.</span></p>
 
-                <a href="mailto:info@thesaprano.dp.ua">info@thesaprano.dp.ua</a>
-                <a href="index.html">www.thesaprano.dp.ua</a>
+                <button class="btn order__btn-submit" type="submit">
+                    <svg width="24.166" height="21.4" viewBox="0 0 24.166 21.4">
+                        <use xlink:href="img/sprite.svg#icon-check"></use>
+                    </svg>
+                    <span>сделать заказ</span>
+                </button>
             </div>
-        </div>
+        </form>
     </div>
 </section>
-
-<div class="container--inner">
-    <form class="form" action="/" method="get">
-        <h3 class="form__title">Обратная связь</h3>
-
-        <div class="form__inner">
-            <input class="form__input" type="text" name="name" placeholder="Имя">
-            <input class="form__input" type="email" name="email" placeholder="E-mail">
-            <input class="form__input" type="tel" name="tel" placeholder="Телефон">
-            <textarea class="form__textarea" name="text" placeholder="Сообщение"></textarea>
-        </div>
-
-        <button class="btn btn--border form__btn" type="submit">Отправить</button>
-    </form>
-</div>
-
-<a class="contacts__link-map" href="https://goo.gl/maps/iQRTmT5FGCX1GWoK8" target="_blank">
-    <svg width="34.318" height="31.295" viewBox="0 0 34.318 31.295">
-        <use xlink:href="img/sprite.svg#icon-contacts-map"></use>
-    </svg>
-    <span>Смотреть на карте</span>
-</a>
 
 <footer class="footer">
     <div class="container">
